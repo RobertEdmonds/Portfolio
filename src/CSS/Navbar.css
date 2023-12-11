@@ -1,0 +1,27 @@
+.navBarTitle{
+    text-decoration: none;
+    border: none;
+}
+
+.navBarLinks{
+    /* padding-right: 1rem;
+    padding-left: 1rem;
+    padding-top: 1.5rem;
+    padding-bottom: 1.3rem;*/
+    text-decoration: none;
+    /*color: blue;*/
+    display: inline-block;
+   /* border-left: solid;
+    border-right: solid;
+    font-weight: bolder;
+    cursor: pointer; */
+    border: none;
+    outline: none;
+    padding: 10px 16px;
+    background-color: #f1f1f1;
+    cursor: pointer;
+}
+.active, .navBarLinks:hover{
+    background-color: black;
+    color: white
+}
