@@ -1,6 +1,6 @@
-/* .App {
-  text-align: center;
-} */
+.App {
+  background-image: linear-gradient(#a0d2eb, #e5eaf5, #d0bdf4, #8458B3, #a28089);
+}
 
 @media screen and (max-width: 600px){
   @media (prefers-reduced-motion: no-preference){
