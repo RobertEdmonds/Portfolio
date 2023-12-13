@@ -1,14 +1,27 @@
 html{
-  height: 100%
+  height: 100%;
+  /* background-image: linear-gradient(#a0d2eb, #e5eaf5, #d0bdf4, #8458B3, #a28089 60%);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; */
 }
 body {
     margin: 0;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
       'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-      sans-serif;
+      sans-serif; */
+    font-family: "Times New Roman", Times, serif;
     height: 100%;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    /* background-image: linear-gradient(#a0d2eb, #e5eaf5, #d0bdf4, #8458B3, #a28089 60%);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; */
+  }
+
+  #root{
+    height: fit-content;
     background-image: linear-gradient(#a0d2eb, #e5eaf5, #d0bdf4, #8458B3, #a28089 60%);
     background-position: center;
     background-repeat: no-repeat;

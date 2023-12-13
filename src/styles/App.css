@@ -2,7 +2,7 @@
   background-image: linear-gradient(#a0d2eb, #e5eaf5, #d0bdf4, #8458B3, #a28089);
 }
 
-@media screen and (max-width: 600px){
+/* @media screen and (max-width: 600px){
   @media (prefers-reduced-motion: no-preference){
     .App-logo {
       animation: App-logo-spin-small infinite 20s linear;
@@ -42,16 +42,16 @@
       margin: 0;
     }
   }
-}
+} */
 
-.title{
+/* .title{
   width: 250px;
   height: 50%;
   top: 25%;
   position: relative;
   left: 10%;
   text-shadow: 1px 1px 2px white, 0 0 0.2em blue;
-}
+} */
 
 .App-header {
   background-color: #282c34;
@@ -68,7 +68,7 @@
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
+/* @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
   }
@@ -86,4 +86,4 @@
   80% {background-color:#edf756; color: #8458B3; left: 30%; top: 0px;}
   90% {background-color:#9df9ef; color: #8458B3; left: 15%; top: 0px;}
   100% {background-color:#51e2f5; color: #8458B3; left:0px; top:0px;}
-}
+} */

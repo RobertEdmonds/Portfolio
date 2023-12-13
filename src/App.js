@@ -5,6 +5,7 @@ import Home from './Home';
 import Projects from './Projects';
 import Git from './Git';
 import Review from './Review';
+import Skills from './Skills';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <Navbar />
       <Routes>
         <Route path='/' element={<Home/>}/>
+        <Route path='/skills' element={<Skills/>}/>
         <Route path='/projects' element={<Projects/>}/>
         <Route path='/git' element={<Git/>}/>
         <Route path='/git' element={<Review/>}/>
