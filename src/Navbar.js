@@ -26,6 +26,14 @@ export default function Navbar(){
             Home
             </NavLink> 
             <NavLink
+            to="/skills"
+            exact
+            className="navBarLinks"
+            // onClick={setActive(!active)}
+            >
+            Skills
+            </NavLink>
+            <NavLink
             to="/projects"
             exact
             className="navBarLinks"
@@ -41,6 +49,14 @@ export default function Navbar(){
             >
             Github
             </NavLink> 
+            <NavLink
+            to="/reviews"
+            exact
+            className="navBarLinks"
+            activeStyle={{ color: "black" }}
+            >
+            Reviews 
+            </NavLink>
             </div>
             </div>
         </>

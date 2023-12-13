@@ -50,7 +50,7 @@
   top: 25%;
   position: relative;
   left: 10%;
-  text-shadow: 1px 1px 2px white, 0 0 1em blue, 0 0 0.2em blue;
+  text-shadow: 1px 1px 2px white, 0 0 0.2em blue;
 }
 
 .App-header {
