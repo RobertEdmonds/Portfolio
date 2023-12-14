@@ -1,24 +1,21 @@
 .navBarTitle{
     text-decoration: none;
     border: none;
+    background: none;
+    color: #8458B3;
+    text-shadow: 1px 1px 2px white, 0 0 0.2em blue;
 }
 
 .navBarLinks{
-    /* padding-right: 1rem;
-    padding-left: 1rem;
-    padding-top: 1.5rem;
-    padding-bottom: 1.3rem;*/
     text-decoration: none;
-    /*color: blue;*/
     display: inline-block;
-   /* border-left: solid;
-    border-right: solid;
-    font-weight: bolder;
-    cursor: pointer; */
+    font-weight: bold;
+    color: #8458B3;
+    text-shadow: 1px 1px 2px white, 0 0 0.2em blue;
     border: none;
     outline: none;
     padding: 10px 16px;
-    background-color: #f1f1f1;
+    background: none;
     cursor: pointer;
 }
 .active, .navBarLinks:hover{
