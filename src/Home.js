@@ -15,6 +15,17 @@ export default function Home(){
                 </div>
                 <div className="Portrait-image" style={{backgroundImage: `url(${Portrait})`}}></div>
             </div>
+            <h1 className='Info-title'>Hobbies</h1>
+            <ul className="skill-list">
+                <li className="skill-item">Escape Rooms</li>
+                <li className="skill-item">Group Strategy Boardgames</li>
+                <li className="skill-item">Pickleball</li>
+                <li className="skill-item">Reading</li>
+                <li className="skill-item">Archery</li>
+                <li className="skill-item">Hiking</li>
+                <li className="skill-item">Lego Building</li>
+                <li className='skill-item'>Traveling With My Wife</li>
+            </ul>
         </>
     )
 }

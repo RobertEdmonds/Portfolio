@@ -19,7 +19,6 @@ function App() {
         <Route path='/git' element={<Git/>}/>
         <Route path='/git' element={<Review/>}/>
       </Routes>
-      {/* <h1>Robert Edmonds</h1> */}
     </div>
     </>
   );

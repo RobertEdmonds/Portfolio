@@ -1,5 +1,3 @@
-import './styles/skills.css'
-
 export default function Skills(){
     return(
         <>
@@ -28,20 +26,22 @@ export default function Skills(){
             </ul>
             <h1 className='Info-title'>Soft Skills</h1>
             <ul className="skill-list">
-                <li className="skill-item">Good Telephone Etiquette</li>
                 <li className="skill-item">Multitasking Abilities</li>
+                <li className="skill-item">Strong Work Ethic</li>
+                <li className="skill-item">Growth Mindset</li>
                 <li className="skill-item">Analytical and Critical Thinking</li>
+                <li className="skill-item">Ability to Learn Quickly</li>
                 <li className="skill-item">Problem-Solving</li>
                 <li className="skill-item">Attention to Detail</li>
+                <li className='skill-item'>Organized</li>
                 <li className="skill-item">Interpersonal Communication</li>
-                <li className="skill-item">Active Listening Skills</li>
-                <li className="skill-item">High Level of Empathy</li>
+                <li className="skill-item">Ability to Collaborate</li>
                 <li className="skill-item">Patience</li>
-                <li className="skill-item">Strong Work Ethic</li>
-                <li className="skill-item">Ability to Learn Quickly</li>
+                <li className="skill-item">Active Listening Skills</li>
                 <li className="skill-item">Diligent</li>
                 <li className="skill-item">Takes Responsibility</li>
-                <li className="skill-item">Growth Mindset</li>
+                <li className="skill-item">Empathetic</li>
+                <li className="skill-item">Superior Telephone Etiquette</li>
             </ul>
         </>
     )

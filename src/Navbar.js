@@ -48,6 +48,14 @@ export default function Navbar(){
             activeStyle={{ color: "black" }}
             >
             Github
+            </NavLink>
+            <NavLink
+            to="/work-history"
+            exact
+            className="navBarLinks"
+            // onClick={setActive(!active)}
+            >
+            Jobs
             </NavLink> 
             <NavLink
             to="/reviews"
