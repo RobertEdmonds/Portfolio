@@ -4,32 +4,25 @@ import { useState } from 'react';
 
 export default function Projects(){
     const [backgroundImage, setBackgroundImage] = useState(PSArray[0])
-    const [count, setCount] = useState(0)
-    // function handleLeftClick(image) {
-    //     const findSpot = AquaProp.find((pic) => pic === image);
-    //     if (findSpot.order_number === 1) {
-    //       const lastPhoto = AquaProp.length;
-    //       const newPhoto = AquaProp.find(
-    //         (photo) => photo.order_number === lastPhoto
-    //       );
-    //       setBackgroundImage(newPhoto.picture_url);
-    //     } else {
-    //       const showPhoto = AquaProp.find(
-    //         (photo) => photo.order_number === findSpot.order_number - 1
-    //       );
-    //       setBackgroundImage(showPhoto.picture_url);
-    //     }
-    //   }
-  
-      function handleRightClick() {
-        if(count < PSArray.length){
-            setCount(count + 1) 
+
+    function handleLeftClick(image) {
+        const index = PSArray.findIndex(x => x === image)
+        if(index === 0){
+            setBackgroundImage(PSArray[PSArray.length - 1])
         }else{
-            setCount(0)
+            setBackgroundImage(PSArray[index - 1])
         }
-        setBackgroundImage(PSArray[count])
       }
-    console.log(PSArray)
+  
+      function handleRightClick(image) {
+        const index = PSArray.findIndex(x => x === image)
+        if(index < PSArray.length - 1){
+            setBackgroundImage(PSArray[index + 1]) 
+        }else{
+            setBackgroundImage(PSArray[0])
+        }
+      }
+
     return(
         <>
             <h1 className='Info-title'>Web Applications</h1>
@@ -61,7 +54,7 @@ export default function Projects(){
                         style={{ backgroundImage: `url(${backgroundImage})` }}
                         className="houseImageBackground"
                     >
-                    {/*
+                    
                         <button
                         className="leftArrowButton"
                         onClick={() => handleLeftClick(backgroundImage)}
@@ -71,7 +64,7 @@ export default function Projects(){
                             src="https://cdn-icons-png.flaticon.com/512/271/271220.png"
                             alt="Left Arrow"
                         />
-                        </button>*/}
+                        </button>
                         <button
                         className="rightArrowButton"
                         onClick={() => handleRightClick(backgroundImage)}
