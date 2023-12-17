@@ -41,10 +41,12 @@
 
 .leftArrowButton{
     width: 1.5rem;
-    height: 20rem; 
+    height: 3rem; 
     float: left;
     align-items: center;
     border: none;
+    top: 50%;
+    position: relative;
     opacity: .5;
     z-index: 15;
 }
@@ -54,13 +56,14 @@
 
 .rightArrowButton{
     width: 1.5rem;
-    /* height: 20rem;  */
+    height: 3rem; 
     float: right;
     border: none;
     background-repeat: no-repeat;
     background-size: cover;
     bottom: 8px;
-    /* margin-top: 50%; */
+    top: 50%;
+    position: relative;
     opacity: .5;
     z-index: 15;
 }
