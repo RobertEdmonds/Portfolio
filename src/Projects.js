@@ -2,12 +2,14 @@ import './styles/Project.css'
 import {PSArray}  from './AppPhotos/PSPhotos/ps.js'
 import { WHArray } from './AppPhotos/WHPhotos/wh';
 import { LRArray } from './AppPhotos/LRPhoto/lr';
+import { APiOSArray } from './AppPhotos/APIOSPhoto/apios';
 import { useState } from 'react';
 
 export default function Projects(){
     const [backgroundImage, setBackgroundImage] = useState(PSArray[0])
     const [whImage, setWHImage] = useState(WHArray[0])
     const [lrImage, setLRImage] = useState(LRArray[0])
+    const [apImage, setAPImage] = useState(APiOSArray[0])
 
     function handleLeftClick(array, image, setter) {
         const index = array.findIndex(x => x === image)
@@ -53,13 +55,7 @@ export default function Projects(){
                         <li className="Project-item">React</li>
                         <li className="Project-item">React Router Dom</li>
                     </ul>
-                    <h3 className='Project-title'>Photo</h3>
-                    <div
-                        style={{ backgroundImage: `url(${backgroundImage})` }}
-                        className="houseImageBackground"
-                    >
-                    
-                        <button
+                    <h3 className='Project-title'>Photo <div style={{display: '-webkit-box'}}><button
                         className="leftArrowButton"
                         onClick={() => handleLeftClick(PSArray, backgroundImage, setBackgroundImage)}
                         >
@@ -77,7 +73,11 @@ export default function Projects(){
                             className="rightArrow"
                             src="https://cdn-icons-png.flaticon.com/512/60/60758.png"
                             alt="Right Arrow"
-                        /> </button>
+                        /> </button></div></h3>
+                    <div
+                        style={{ backgroundImage: `url(${backgroundImage})` }}
+                        className="houseImageBackground"
+                    >  
                     </div> 
                 </div>
             </div>
@@ -104,13 +104,7 @@ export default function Projects(){
                         <li className="Project-item">React</li>
                         <li className="Project-item">React Router Dom</li>
                     </ul>
-                    <h3 className='Project-title'>Photo</h3>
-                    <div
-                        style={{ backgroundImage: `url(${whImage})` }}
-                        className="houseImageBackground"
-                    >
-                    
-                        <button
+                    <h3 className='Project-title'>Photo <div style={{display: '-webkit-box'}}><button
                         className="leftArrowButton"
                         onClick={() => handleLeftClick(WHArray, whImage, setWHImage)}
                         >
@@ -128,7 +122,11 @@ export default function Projects(){
                             className="rightArrow"
                             src="https://cdn-icons-png.flaticon.com/512/60/60758.png"
                             alt="Right Arrow"
-                        /> </button>
+                        /> </button></div></h3>
+                    <div
+                        style={{ backgroundImage: `url(${whImage})` }}
+                        className="houseImageBackground"
+                    >
                     </div> 
                 </div>
             </div>
@@ -155,13 +153,7 @@ export default function Projects(){
                         <li className="Project-item">React</li>
                         <li className="Project-item">React Router Dom</li>
                     </ul>
-                    <h3 className='Project-title'>Photo</h3>
-                    <div
-                        style={{ backgroundImage: `url(${lrImage})` }}
-                        className="houseImageBackground"
-                    >
-                    
-                        <button
+                    <h3 className='Project-title'>Photo <div style={{display: '-webkit-box'}}>    <button
                         className="leftArrowButton"
                         onClick={() => handleLeftClick(LRArray, lrImage, setLRImage)}
                         >
@@ -180,6 +172,11 @@ export default function Projects(){
                             src="https://cdn-icons-png.flaticon.com/512/60/60758.png"
                             alt="Right Arrow"
                         /> </button>
+                    </div>  </h3>
+                    <div
+                        style={{ backgroundImage: `url(${lrImage})` }}
+                        className="houseImageBackground"
+                    >
                     </div> 
                 </div>
             </div>
@@ -207,15 +204,9 @@ export default function Projects(){
                         <li className="Project-item">React</li>
                         <li className="Project-item">React Router Dom</li>
                     </ul>
-                    <h3 className='Project-title'>Photo</h3>
-                    <div
-                        style={{ backgroundImage: `url(${whImage})` }}
-                        className="houseImageBackground"
-                    >
-                    
-                        <button
+                    <h3 className='Project-title'>Photo    <div style={{display: '-webkit-box'}}> <button
                         className="leftArrowButton"
-                        onClick={() => handleLeftClick(WHArray, whImage, setWHImage)}
+                        onClick={() => handleLeftClick(APiOSArray, apImage, setAPImage)}
                         >
                         <img
                             className="leftArrow"
@@ -225,15 +216,20 @@ export default function Projects(){
                         </button>
                         <button
                         className="rightArrowButton"
-                        onClick={() => handleRightClick(WHArray, whImage, setWHImage)}
+                        onClick={() => handleRightClick(APiOSArray, apImage, setAPImage)}
                         >
                         <img
                             className="rightArrow"
                             src="https://cdn-icons-png.flaticon.com/512/60/60758.png"
                             alt="Right Arrow"
-                        /> </button>
+                        /> </button> </div></h3>
+                    <div
+                        style={{ backgroundImage: `url(${apImage})` }}
+                        className="houseImageBackground"
+                    >
                     </div> 
                 </div>
+                <br/>
             </div>
         </>
     )

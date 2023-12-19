@@ -6,6 +6,7 @@
 
 .Project-title{
     text-shadow: 1px 1px 2px white, 0 0 0.2em blue;
+    display:-webkit-inline-box;
 }
 
 .Project-writing{
@@ -34,16 +35,16 @@
     margin-right: auto;
     height: 20rem;
     background: no-repeat;
-    background-size: 100%;
+    background-size: contain;
     text-align: center;
     /* margin-left: 30%; */
 }
 
 .leftArrowButton{
     width: 1.5rem;
-    height: 3rem; 
-    float: left;
-    align-items: center;
+    height: 2rem; 
+    display: block;
+    margin-left: 3rem;
     border: none;
     top: 50%;
     position: relative;
@@ -56,9 +57,10 @@
 
 .rightArrowButton{
     width: 1.5rem;
-    height: 3rem; 
-    float: right;
+    height: 2rem; 
     border: none;
+    display: block;
+    margin-left: 1rem;
     background-repeat: no-repeat;
     background-size: cover;
     bottom: 8px;
