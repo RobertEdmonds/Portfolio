@@ -78,8 +78,8 @@
 .Home-writing{
     font-weight: bolder;
     font-size: x-large;
-    color: #9df9ef;
-    text-shadow: 1px 1px 2px black;
+    color: black;
+    /* text-shadow: 1px 1px 2px white; */
     width: 50%;
     padding-left: 1rem;
     margin-left: 5rem;

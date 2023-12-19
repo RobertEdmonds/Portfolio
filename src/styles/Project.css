@@ -12,8 +12,8 @@
 .Project-writing{
     font-weight: bolder;
     font-size: large;
-    color: #9df9ef;
-    text-shadow: 1px 1px 2px black;
+    color: black;
+    /* text-shadow: 1px 1px 2px white; */
 }
 
 .Project-item{
@@ -24,8 +24,8 @@
     list-style-type: none;
     font-weight: bolder;
     font-size: large;
-    color: #9df9ef;
-    text-shadow: 1px 1px 2px black;
+    color: black;
+    /* text-shadow: 1px 1px 2px white; */
 }
 
 .houseImageBackground{
