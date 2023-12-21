@@ -16,7 +16,7 @@ function App() {
         <Route path='/' element={<Home/>}/>
         <Route path='/skills' element={<Skills/>}/>
         <Route path='/projects' element={<Projects/>}/>
-        <Route path='/git' element={<Git/>}/>
+        <Route path='/git&learning' element={<Git/>}/>
         <Route path='/git' element={<Review/>}/>
       </Routes>
     </div>

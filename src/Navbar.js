@@ -42,12 +42,12 @@ export default function Navbar(){
             Projects
             </NavLink> 
             <NavLink
-            to="/git"
+            to="/git&learning"
             exact
             className="navBarLinks"
             activeStyle={{ color: "black" }}
             >
-            Github
+            Git & Learning
             </NavLink>
             <NavLink
             to="/work-history"
