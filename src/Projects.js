@@ -3,6 +3,7 @@ import {PSArray}  from './AppPhotos/PSPhotos/ps.js'
 import { WHArray } from './AppPhotos/WHPhotos/wh';
 import { LRArray } from './AppPhotos/LRPhoto/lr';
 import { APiOSArray } from './AppPhotos/APIOSPhoto/apios';
+import { FILArray } from './AppPhotos/FILPhotos/fil';
 import { useState } from 'react';
 
 export default function Projects(){
@@ -10,6 +11,7 @@ export default function Projects(){
     const [whImage, setWHImage] = useState(WHArray[0])
     const [lrImage, setLRImage] = useState(LRArray[0])
     const [apImage, setAPImage] = useState(APiOSArray[0])
+    const [filImage, setFILImage] = useState(FILArray[0])
 
     function handleLeftClick(array, image, setter) {
         const index = array.findIndex(x => x === image)
@@ -85,6 +87,56 @@ export default function Projects(){
                         /> </button></div></h3>
                     <div
                         style={{ backgroundImage: `url(${backgroundImage})` }}
+                        className="houseImageBackground"
+                    >  
+                    </div> 
+                </div>
+            </div>
+            <div className="Project-div">
+                <h2 className='Project-title'>Fisher Island Lemonade</h2>
+                <div className='Project-div'>
+                    <h3 className='Project-title'>Description</h3>
+                    <div className='Project-div'>
+                        <p className='Project-writing'>
+                            I worked closely with the design team at Fisher Island Lemonade. We utilized the SCRUM method during the crucial webpage updates. They wanted a new look and new pages.  
+                        </p>
+                        <ul className='skill-list'>
+                            <li className='Project-writing'>Updated old code bases to modern development standards using PHP and CSS, resulting in substantial improvements in functionality and design, showcasing my ability to work with existing code and enhance its performance and aesthetics.</li>
+                            <br/>
+                            <li className='Project-writing'>Participated in software field testing, utilizing WordPress, to verify the performance of developed projects.</li>
+                            <br/>
+                            <li className='Project-writing'>Collaborated on various stages of the systems development lifecycle, from requirement gathering to production releases, while actively using PHP, CSS, and updating WordPress to ensure project success.</li>
+                            <br/>
+                        </ul>
+                    </div>
+                    <h3 className='Project-title'>Programs</h3>
+                    <ul className="skill-list">
+                        <li className="Project-item">Linux</li>
+                        <li className="Project-item">PHP</li>
+                        <li className="Project-item">CSS</li>
+                        <li className="Project-item">WordPress</li>
+                    </ul>
+                    <h3 className='Project-title'>Photo <div style={{display: '-webkit-box'}}><button
+                        className="leftArrowButton"
+                        onClick={() => handleLeftClick(FILArray, filImage, setFILImage)}
+                        >
+                        <img
+                            className="leftArrow"
+                            src="https://cdn-icons-png.flaticon.com/512/271/271220.png"
+                            alt="Left Arrow"
+                        />
+                        </button>
+                        <button
+                        className="rightArrowButton"
+                        onClick={() => handleRightClick(FILArray, filImage, setFILImage)}
+                        >
+                        <img
+                            className="rightArrow"
+                            src="https://cdn-icons-png.flaticon.com/512/60/60758.png"
+                            alt="Right Arrow"
+                        /> </button></div></h3>
+                    <div
+                        style={{ backgroundImage: `url(${filImage})` }}
                         className="houseImageBackground"
                     >  
                     </div> 
@@ -205,21 +257,22 @@ export default function Projects(){
                     <h3 className='Project-title'>Description</h3>
                     <div className='Project-div'>
                         <p className='Project-writing'>
-                            This application is password protected for keeping inventory for a sand company. Aqua Prop is able to keep track of the sand showing up on site and the sand used on site. Also there was a certain equation to keep track of moisture. If there was some delivered bad sand they could also keep inventory of amount. Aqua Prop had the ability to export the data to an Excel sheet. For the companies hiring Aqua Prop, they were able to keep track of the their sites.
+                            The iOS app for AquaProp. It has the capabilities to scan QRCodes that match a specific job site and adds the new inventory to the job site. This was to help the on-site engineers update the inventory quickly and minimize human error. It also displays all the sites inventory to keep track on the go.
                         </p>
+                        <ul className='skill-list'>
+                            <li className='Project-writing'>Developed and launched an iOS app using React Native for Aqua Prop, enabling real-time inventory tracking and seamless addition of new items through QR-code scanning, following Agile methodology for rapid and efficient development.</li>
+                        </ul>
                     </div>
                     <h3 className='Project-title'>Programs</h3>
                     <ul className="skill-list">
                         <li className="Project-item">Linux</li>
-                        <li className="Project-item">SQLite</li>
                         <li className="Project-item">Postgres</li>
                         <li className="Project-item">Ruby on Rails</li>
                         <li className="Project-item">Serializer</li>
                         <li className="Project-item">Bcrypt</li>
                         <li className="Project-item">Bootstrap</li>
-                        <li className="Project-item">Moment</li>
                         <li className="Project-item">CSS</li>
-                        <li className="Project-item">React</li>
+                        <li className="Project-item">ReactNative</li>
                         <li className="Project-item">React Router Dom</li>
                     </ul>
                     <h3 className='Project-title'>Photo    <div style={{display: '-webkit-box'}}> <button
