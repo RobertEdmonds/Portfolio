@@ -6,6 +6,7 @@ import Projects from './Projects';
 import Git from './Git';
 import Review from './Review';
 import Skills from './Skills';
+import Work from './Work';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Route path='/skills' element={<Skills/>}/>
         <Route path='/projects' element={<Projects/>}/>
         <Route path='/git&learning' element={<Git/>}/>
+        <Route path='/work-history' element={<Work/>}/>
         <Route path='/git' element={<Review/>}/>
       </Routes>
     </div>

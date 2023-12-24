@@ -55,7 +55,7 @@ export default function Navbar(){
             className="navBarLinks"
             // onClick={setActive(!active)}
             >
-            Jobs
+            Work History
             </NavLink> 
             <NavLink
             to="/reviews"
