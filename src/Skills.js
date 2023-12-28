@@ -16,6 +16,8 @@ export default function Skills(){
                 <li className="skill-item">Serializer</li>
                 <li className="skill-item">Bcrypt</li>
                 <li className="skill-item">PubSub</li>
+                <li className="skill-item">Action Cable</li>
+                <li className="skill-item">Python</li>
                 <li className="skill-item">React</li>
                 <li className="skill-item">React Router Dom</li>
                 <li className="skill-item">UseContext</li>
