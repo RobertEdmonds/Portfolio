@@ -7,6 +7,7 @@ import Git from './Git';
 import Review from './Review';
 import Skills from './Skills';
 import Work from './Work';
+import Footer from './Footer';
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
         <Route path='/work-history' element={<Work/>}/>
         <Route path='/git' element={<Review/>}/>
       </Routes>
+      <Footer/>
     </div>
     </>
   );

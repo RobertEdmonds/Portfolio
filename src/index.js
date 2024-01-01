@@ -7,7 +7,7 @@ import './styles/index.css';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <BrowserRouter className="App">
-    <App />
+      <App />
   </BrowserRouter>
 );
 
