@@ -5,6 +5,21 @@ export default function Work(){
         <>
             <h1 className='Info-title'>Work History</h1>
             <div className="Project-div">
+                <h2 className='Project-title'>Keeper Security</h2>
+                <div className='Project-div'>
+                    <h3 >Enterprise Solutions Specialist<br/>January 2024 -- Present</h3>
+                    <ul className='skill-list'>
+                            <li className='Project-writing'>Provided expert troubleshooting and support for SaaS platforms (web, mobile, desktop, CLI), handling 50+ email cases daily, live chats, calls, and support sessions while maintaining a 4.9+/5 customer satisfaction rating.</li>
+                            <br/>
+                            <li className='Project-writing'>Assisted users with SSO integration, automation system setup on Azure and VMs, and configured Active Directory for test environments.</li>
+                            <br/>
+                            <li className='Project-writing'>Led biweekly cadence calls with top resellers, created training documentation, onboarded new hires, and collaborated with developers to reproduce and resolve system bugs.</li>
+                            <br/>
+                            <li className='Project-writing'>Recognized as a top performer since month three and selected for the Emerging Leaders Training Program for consistently exceeding performance metrics.</li>
+                        </ul>
+                </div>
+            </div>
+            <div className="Project-div">
                 <h2 className='Project-title'>Aqua Prop</h2>
                 <div className='Project-div'>
                     <h3 >Contract Software Developer<br/>March 2023 -- Sept 2023</h3>
